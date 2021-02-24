@@ -658,7 +658,7 @@
 #define HOMING_BUMP_MM      { 0, 0, 0 }       // (mm) Backoff from endstops after first bump   //BluJay
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 
-#define HOMING_BACKOFF_POST_MM { 0, 0, .65 }  // (mm) Backoff from endstops after homing   //BluJay
+#define HOMING_BACKOFF_POST_MM { 0, 0, 1.23 }  // (mm) Backoff from endstops after homing   //BluJay
 
 //#define QUICK_HOME                            // If G28 contains XY do a diagonal move first   //BluJay
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
@@ -2302,7 +2302,7 @@
 
   #if AXIS_IS_TMC(Z)
     #define Z_CURRENT       530   //BluJay
-    #define Z_CURRENT_HOME  Z_CURRENT   //BluJay   //BluJay
+    #define Z_CURRENT_HOME  350   //BluJay   //BluJay
     #define Z_MICROSTEPS     16
     #define Z_RSENSE          0.11
     #define Z_CHAIN_POS      -1
