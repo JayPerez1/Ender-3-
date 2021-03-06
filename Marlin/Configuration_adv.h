@@ -658,7 +658,7 @@
 #define HOMING_BUMP_MM      { 0, 0, 0 }       // (mm) Backoff from endstops after first bump   //BluJay
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 
-#define HOMING_BACKOFF_POST_MM { 0, 0, 1.23 }  // (mm) Backoff from endstops after homing   //BluJay
+#define HOMING_BACKOFF_POST_MM { 0, 0, 1.1 }  // (mm) Backoff from endstops after homing   //BluJay
 
 //#define QUICK_HOME                            // If G28 contains XY do a diagonal move first   //BluJay
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
@@ -1054,7 +1054,7 @@
 
 #if EITHER(ULTIPANEL, EXTENSIBLE_UI)
   #define MANUAL_FEEDRATE { 50*60, 50*60, 20*60, 4*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel   //BluJay
-  #define SHORT_MANUAL_Z_MOVE 0.025 // (mm) Smallest manual Z move (< 0.1mm)
+  #define SHORT_MANUAL_Z_MOVE 0.02 // (mm) Smallest manual Z move (< 0.1mm)
   #if ENABLED(ULTIPANEL)
     #define MANUAL_E_MOVES_RELATIVE // Display extruder move distance rather than "position"
     #define ULTIPANEL_FEEDMULTIPLY  // Encoder sets the feedrate multiplier on the Status Screen

@@ -133,7 +133,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Master 1-21E-21"   //BluJay
+#define CUSTOM_MACHINE_NAME "Master 03-05-21"   //BluJay
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -881,7 +881,7 @@
  * or (with LCD_BED_LEVELING) the LCD controller.
  */
 #define PROBE_MANUALLY   //BluJay
-#define MANUAL_PROBE_START_Z 1.5   //BluJay
+#define MANUAL_PROBE_START_Z 1.1   //BluJay
 
 /**
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
